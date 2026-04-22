@@ -1,0 +1,6 @@
+<html>
+<body>
+<h1>Welcome to CI/CD Demo</h1>
+<a href="hello">Click here to test deployment</a>
+</body>
+</html>
