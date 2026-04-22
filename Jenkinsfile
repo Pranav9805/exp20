@@ -7,19 +7,13 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Pranav9805/exp20.git'
-            }
-        }
-
         stage('Build WAR') {
             steps {
                 bat 'mvn clean package'
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Docker Build') {
             steps {
                 bat 'docker build -t sample-app .'
             }
